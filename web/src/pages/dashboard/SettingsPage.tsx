@@ -72,7 +72,7 @@ export default function SettingsPage() {
         setSlugAvailable(true);
         setSlugError('');
       }
-    } catch (err) {
+    } catch {
       setSlugAvailable(true);
       setSlugError('');
     }
