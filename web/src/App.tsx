@@ -45,7 +45,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/:slug" element={<PublicBookingPage />} />
+          <Route path="/booking/:slug" element={<PublicBookingPage />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
