@@ -1,0 +1,27 @@
+# Supabase Local Development Configuration
+project_id = "qgkgqfajtuycallceqil"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+non_api_schemas = []
+jwt_secret = "super-secret-jwt-token-with-at-least-32-characters-long"
+max_rows = 1000
+
+[db]
+port = 5432
+shadow_port = 54320
+
+[auth]
+enabled = true
+autoconfirm = false
+jwt_expiry = 3600
+refresh_interval = 900
+
+[storage]
+enabled = true
+file_size_limit = 52428800
+
+[realtime]
+enabled = true
